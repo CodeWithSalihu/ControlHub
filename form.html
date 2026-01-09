@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ControlHub form</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary">ControlHub</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/user.png" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Salihu Barup</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="button.html" class="dropdown-item">Buttons</a>
+                            <a href="typography.html" class="dropdown-item">Typography</a>
+                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                        </div>
+                    </div>
+                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+                    <a href="form.html" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="signin.html" class="dropdown-item">Sign In</a>
+                            <a href="signup.html" class="dropdown-item">Sign Up</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                            <a href="blank.html" class="dropdown-item">Blank Page</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Message</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.png" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Salihu send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.png" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Salihu send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.png" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Salihu send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Notificatin</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Profile updated</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">New user added</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Password changed</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="img/user.png" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">Salihu Barup</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+            <!-- Form Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">User Login</h6>
+        <form>
+            <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="loginEmail" placeholder="salihu@email.com" required>
+                <div class="form-text">Your email is safe with us.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Enter password" required>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Staff Profile Settings</h6>
+        <form>
+            <div class="row mb-3">
+                <label for="profileEmail" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="profileEmail" placeholder="salihu@email.com">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="profileRole" class="col-sm-3 col-form-label">Role</label>
+                <div class="col-sm-9">
+                    <select class="form-select" id="profileRole">
+                        <option selected>Administrator</option>
+                        <option>Manager</option>
+                        <option>Staff</option>
+                    </select>
+                </div>
+            </div>
+
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-3 pt-0">Status</legend>
+                <div class="col-sm-9">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="status" id="activeStatus" checked>
+                        <label class="form-check-label" for="activeStatus">
+                            Active
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="status" id="inactiveStatus">
+                        <label class="form-check-label" for="inactiveStatus">
+                            Inactive
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="row mb-3">
+                <div class="col-sm-9 offset-sm-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="notifyUser">
+                        <label class="form-check-label" for="notifyUser">
+                            Enable email notifications
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Update Profile</button>
+        </form>
+    </div>
+</div>
+
+                  <div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">User Feedback Form</h6>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="feedbackEmail" placeholder="name@example.com">
+            <label for="feedbackEmail">Email Address</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="feedbackPassword" placeholder="Password">
+            <label for="feedbackPassword">Account Password</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <select class="form-select" id="feedbackType">
+                <option selected disabled>Select feedback type</option>
+                <option value="complaint">Complaint</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="support">Support Request</option>
+            </select>
+            <label for="feedbackType">Feedback Category</label>
+        </div>
+
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here"
+                id="feedbackMessage" style="height: 150px;"></textarea>
+            <label for="feedbackMessage">Message</label>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Document Upload</h6>
+
+        <div class="mb-3">
+            <label for="singleFile" class="form-label">Upload ID or Document</label>
+            <input class="form-control" type="file" id="singleFile">
+        </div>
+
+        <div class="mb-3">
+            <label for="multipleFiles" class="form-label">Upload Multiple Files</label>
+            <input class="form-control" type="file" id="multipleFiles" multiple>
+        </div>
+
+        <div class="mb-3">
+            <label for="smallFile" class="form-label">Compressed File</label>
+            <input class="form-control form-control-sm" id="smallFile" type="file">
+        </div>
+
+        <div>
+            <label for="largeFile" class="form-label">High-Resolution File</label>
+            <input class="form-control form-control-lg" id="largeFile" type="file">
+        </div>
+    </div>
+</div>
+
+                  <div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Select Options</h6>
+
+        <label class="form-label">Small Select</label>
+        <select class="form-select form-select-sm mb-3" aria-label="Small select example">
+            <option selected disabled>Choose an option</option>
+            <option value="1">Option One</option>
+            <option value="2">Option Two</option>
+            <option value="3">Option Three</option>
+        </select>
+
+        <label class="form-label">Default Select</label>
+        <select class="form-select mb-3" aria-label="Default select example">
+            <option selected disabled>Choose an option</option>
+            <option value="1">Option One</option>
+            <option value="2">Option Two</option>
+            <option value="3">Option Three</option>
+        </select>
+
+        <label class="form-label">Large Select</label>
+        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+            <option selected disabled>Choose an option</option>
+            <option value="1">Option One</option>
+            <option value="2">Option Two</option>
+            <option value="3">Option Three</option>
+        </select>
+
+        <label class="form-label">Multiple Select</label>
+        <select class="form-select" multiple aria-label="Multiple select example">
+            <option value="1">Option One</option>
+            <option value="2">Option Two</option>
+            <option value="3">Option Three</option>
+            <option value="4">Option Four</option>
+        </select>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Checkboxes, Radios & Switches</h6>
+
+        <!-- Checkboxes -->
+        <div class="mb-3">
+            <label class="form-label d-block">Checkboxes</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxDefault">
+                <label class="form-check-label" for="checkboxDefault">Default checkbox</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkboxChecked" checked>
+                <label class="form-check-label" for="checkboxChecked">Checked checkbox</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="checkboxInline1" value="option1">
+                <label class="form-check-label" for="checkboxInline1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="checkboxInline2" value="option2">
+                <label class="form-check-label" for="checkboxInline2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="checkboxInline3" value="option3" disabled>
+                <label class="form-check-label" for="checkboxInline3">3 (disabled)</label>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Radios -->
+        <div class="mb-3">
+            <label class="form-label d-block">Radios</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">Default radio</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">Checked radio</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radioInline" id="radioInline1" value="1">
+                <label class="form-check-label" for="radioInline1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radioInline" id="radioInline2" value="2">
+                <label class="form-check-label" for="radioInline2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radioInline" id="radioInline3" value="3" disabled>
+                <label class="form-check-label" for="radioInline3">3 (disabled)</label>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Switches -->
+        <div>
+            <label class="form-label d-block">Switches</label>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="switchDefault">
+                <label class="form-check-label" for="switchDefault">Default switch</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="switchChecked" checked>
+                <label class="form-check-label" for="switchChecked">Checked switch</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="switchDisabled" disabled>
+                <label class="form-check-label" for="switchDisabled">Disabled switch</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="switchCheckedDisabled" checked disabled>
+                <label class="form-check-label" for="switchCheckedDisabled">Checked & disabled switch</label>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+                   <div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Input Groups</h6>
+
+        <!-- Username with @ -->
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="username-addon">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="username-addon">
+        </div>
+
+        <!-- Email example -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="email-addon">
+            <span class="input-group-text" id="email-addon">@example.com</span>
+        </div>
+
+        <!-- Vanity URL -->
+        <label for="vanity-url" class="form-label">Your vanity URL</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="vanity-addon">https://example.com/users/</span>
+            <input type="text" class="form-control" id="vanity-url" aria-describedby="vanity-addon">
+        </div>
+
+        <!-- Amount -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">₦</span>
+            <input type="text" class="form-control" placeholder="Amount" aria-label="Amount">
+            <span class="input-group-text">.00</span>
+        </div>
+
+        <!-- Multiple inputs -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        </div>
+
+        <!-- Textarea input group -->
+        <div class="input-group">
+            <span class="input-group-text">With textarea</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 col-xl-6">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Input Sizing</h6>
+
+        <input class="form-control form-control-lg mb-3" type="text" placeholder="Large input (.form-control-lg)"
+            aria-label="Large input example">
+        <input class="form-control mb-3" type="text" placeholder="Default input" aria-label="Default input example">
+        <input class="form-control form-control-sm" type="text" placeholder="Small input (.form-control-sm)"
+            aria-label="Small input example">
+    </div>
+</div>
+
+
+
+          
+                   <!-- Footer Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light rounded-top p-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 text-center text-sm-start">
+                &copy; <a href="index.html">ControlHub Nigeria</a>, All Rights Reserved · Calabar, Cross River State.
+            </div>
+           
+        </div>
+
+        </div>
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
